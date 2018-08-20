@@ -13,6 +13,22 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SimServlet</servlet-name>
+		<url-pattern>/sim/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewServlet</servlet-name>
+		<servlet-class>com.simple.test.controller.ViewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewServlet</servlet-name>
 		<url-pattern>/views/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TeServlet</servlet-name>
+		<servlet-class>com.simple.test.controller.TeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TeServlet</servlet-name>
+		<url-pattern>/te/*</url-pattern>
 	</servlet-mapping>
 </web-app>
